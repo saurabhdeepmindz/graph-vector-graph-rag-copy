@@ -23,7 +23,7 @@ def process_and_upsert_files(
     summary: dict[str, int] = {}
 
     for name in file_names:
-        file = f"data/{name}.json"
+        file = f"datadocs/{name}.json"
         if not os.path.exists(file):
             print(f"File not found: {file}")
             continue
